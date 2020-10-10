@@ -9,6 +9,9 @@
         <div>
           <p class="mb-0"><%= micropost.content %></p>
         </div>
+        <div>
+          <%= render 'favorites/like_button', micropost: micropost %>
+        </div>
       </div>
     </li>
   <% end %>
